@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すみ探し</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ホーム画面 -->
+  <div id="home" class="screen">
+    <!-- <img src="assets/chiunehome.png" alt="ホーム画面" class="background"> -->
+    <img src="assets/Group 2.png" alt="背景装飾" class="float-bg" id="floating-deco">
+    <div class="center">
+      <h1>すみ探し</h1>
+      <button id="start-btn">スタート</button>
+    </div>
+  </div>
+
+  <!-- プレイ画面 -->
+  <div id="game" class="screen hidden">
+    <!-- <img src="assets/chiuneplay.png" alt="プレイ背景" class="background"> -->
+    <div id="game-board"></div>
+    <div id="timer">60.0 s</div>
+  </div>
+
+  <!-- ゲームオーバー画面 -->
+  <div id="game-over" class="screen hidden">
+    <div class="center">
+      <h1>GAME OVER</h1>
+      <button onclick="restartGame()">もう一度プレイ</button>
+    </div>
+  </div>
+
+  <!-- ゲームクリア画面 -->
+  <div id="game-clear" class="screen hidden">
+    <div class="center">
+      <h1>すごい！</h1>
+      <p>クリアおめでとう！</p>
+      <button onclick="restartGame()">もう一度プレイ</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
