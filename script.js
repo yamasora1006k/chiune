@@ -48,7 +48,7 @@ function startRound() {
     const img = document.createElement("img");
     img.src = i === correctIndex ? correctImageSrc : wrongImageSrc;
     img.alt = "角";
-    img.style.width = "40%";
+    img.style.width = "60%";
     img.style.height = "auto";
     img.style.aspectRatio = "1 / 1";
     img.onclick = () => {
